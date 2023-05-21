@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 
 export default {
-  title: 'Components/Navbar',
+  title: 'Components/Navbar/Navbar',
   component: Navbar,
   parameters: {
     layout: 'fullscreen',
