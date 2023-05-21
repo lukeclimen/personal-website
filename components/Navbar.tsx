@@ -1,31 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
+import { navLinks } from '../app/layout';
+
 import logoNormal from '../public/assets/logo-light.png';
 
 export default function Navbar() {
-  const navLinks = [
-    {
-      linkName: 'About',
-      linkKey: 'about-link',
-      linkExtension: '/about',
-    },
-    {
-      linkName: 'Blog',
-      linkKey: 'blog-link',
-      linkExtension: '/blog',
-    },
-    {
-      linkName: 'Portfolio',
-      linkKey: 'portfolio-link',
-      linkExtension: '/portfolio',
-    },
-    {
-      linkName: 'Contact',
-      linkKey: 'contact-link',
-      linkExtension: '/contact',
-    },
-  ];
-
   return (
     <nav className='flex justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200'>
       <Link href='/'>
@@ -36,6 +16,7 @@ export default function Navbar() {
           className='mx-5 my-3'
         />
       </Link>
+      {/* Dashboard menu */}
       <ul className='space-x-10 px-12 hidden md:flex'>
         {navLinks.map((element) => (
           <li
