@@ -40,9 +40,8 @@ export const Mobile: Story = {
   },
   args: {
     cardTitle: 'Lorem, ipsum dolor.',
-    cardText: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste labore
-          officiis temporibus aliquid hic alias eaque, ratione, ea numquam
-          exercitationem vitae nam repellendus esse ducimus impedit blanditiis
-          totam. Natus, dolores.`,
+    cardText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          magni corrupti culpa aliquam minus nesciunt consequatur animi sunt
+          suscipit. Dolor?`,
   },
 };
