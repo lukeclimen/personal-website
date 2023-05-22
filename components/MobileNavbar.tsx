@@ -9,7 +9,7 @@ import { navLinks } from '../app/layout';
 
 import logoNormal from '../public/assets/logo-light.png';
 
-export default function MobileMenu() {
+export default function MobileNavbar() {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const handleMenuClick = () => {
@@ -20,7 +20,7 @@ export default function MobileMenu() {
 
   return (
     <>
-      <nav className='flex justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200 z-50'>
+      <nav className='flex md:hidden justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200 z-50'>
         <Link href='/'>
           <Image
             src={logoNormal}

@@ -1,11 +1,11 @@
-import MobileMenu from '../components/MobileMenu';
+import MobileNavbar from '../components/MobileNavbar';
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
-const meta: Meta<typeof MobileMenu> = {
-  title: 'Components/Navbar/MobileMenu',
-  component: MobileMenu,
+const meta: Meta<typeof MobileNavbar> = {
+  title: 'Components/Navbar/MobileNavbar',
+  component: MobileNavbar,
   parameters: {
     layout: 'fullscreen',
     viewport: {
@@ -16,6 +16,6 @@ const meta: Meta<typeof MobileMenu> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof MobileMenu>;
+type Story = StoryObj<typeof MobileNavbar>;
 
 export const Default: Story = {};
