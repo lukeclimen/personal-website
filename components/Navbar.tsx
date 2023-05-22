@@ -7,7 +7,7 @@ import logoNormal from '../public/assets/logo-light.png';
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200'>
+    <nav className='hidden md:flex justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200'>
       <Link href='/'>
         <Image
           src={logoNormal}
