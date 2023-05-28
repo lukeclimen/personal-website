@@ -1,0 +1,32 @@
+.img-container {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  border: 2px solid white;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.top-img {
+  background-color: red;
+}
+
+.bottom-img {
+  background-color: blue;
+  width: 100%;
+}
+
+.slider {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.slider::-webkit-scrollbar-track {
+  opacity: 0;
+}
