@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  background-size: 600px 100%;
 }
 
 .top-img {
@@ -22,9 +23,9 @@
 }
 
 .slider {
-  opacity: 1;
   position: absolute;
   width: 100%;
+  bottom: 0;
 }
 
 .slider::-webkit-scrollbar-track {

@@ -1,8 +1,15 @@
-import Image from 'next/image';
 import './styles.css';
 import { useState } from 'react';
 
-export default function BeforeAfterPicture() {
+export interface Images {
+  beforeImageLink: string;
+  afterImageLink: string;
+}
+
+export default function BeforeAfterPicture({
+  beforeImageLink,
+  afterImageLink,
+}: Images) {
   const [sliderWidth, setSliderWidth] = useState('50');
   const handleSliderChange = (value: string) => {
     setSliderWidth(value);
@@ -10,8 +17,17 @@ export default function BeforeAfterPicture() {
 
   return (
     <div className='img-container'>
-      <div className='img bottom-img'></div>
-      <div className='img top-img' style={{ width: sliderWidth + '%' }}></div>
+      <div
+        className='img bottom-img'
+        style={{ backgroundImage: `url(${afterImageLink})` }}
+      />
+      <div
+        className='img top-img'
+        style={{
+          width: sliderWidth + '%',
+          backgroundImage: `url(${beforeImageLink})`,
+        }}
+      />
       <input
         type='range'
         min='1'

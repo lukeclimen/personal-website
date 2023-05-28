@@ -1,4 +1,6 @@
 import BeforeAfterPicture from '../components/BeforeAfterPicture/BeforeAfterPicture';
+import BeforeImage from '../public/assets/shrubs-before.jpg';
+import AfterImage from '../public/assets/shrubs-after.jpg';
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
@@ -17,8 +19,9 @@ const meta: Meta<typeof BeforeAfterPicture> = {
 export default meta;
 type Story = StoryObj<typeof BeforeAfterPicture>;
 
-export const Desktop: Story = {
-  parameters: {
-    layout: 'centered',
+export const Main: Story = {
+  args: {
+    beforeImageLink: 'https://i.postimg.cc/hz5szmBj/shrubs-before.jpg',
+    afterImageLink: 'https://i.postimg.cc/JDnKzqSv/shrubs-after.jpg',
   },
 };
