@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const navLinks = [
   {
+    linkName: 'Home',
+    linkKey: 'home-link',
+    linkExtension: '/',
+  },
+  {
     linkName: 'About',
     linkKey: 'about-link',
     linkExtension: '/about',
