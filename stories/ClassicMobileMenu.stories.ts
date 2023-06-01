@@ -1,4 +1,4 @@
-import MobileNavbar from '../components/MobileNavbar';
+import MobileNavbar from '../components/Navbar/ClassicMobileNavbar';
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { navLinks } from '../app/layout';
+import { navLinks } from '../../app/layout';
 
-import logoNormal from '../public/assets/logo-light.png';
+import logoNormal from '../../public/assets/logo-light.png';
 
 export default function Navbar() {
   return (
