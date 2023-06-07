@@ -10,12 +10,21 @@ const meta: Meta<typeof SoftNavbar> = {
     layout: 'fullscreen',
     viewport: {
       viewports: INITIAL_VIEWPORTS,
-      defaultViewport: 'iphonex',
+    },
+    backgrounds: {
+      default: 'black',
+      values: [
+        {
+          name: 'black',
+          value: '#000',
+        },
+      ],
     },
   },
-  argtypes: {
-    selected: {
-      type: String,
+  argTypes: {
+    defaultSelected: {
+      type: 'string',
+      required: true,
       control: 'radio',
       options: ['/', '/about', '/blog', '/portfolio', '/contact'],
     },
@@ -27,6 +36,22 @@ type Story = StoryObj<typeof SoftNavbar>;
 
 export const Mobile: Story = {
   args: {
-    selected: '/',
+    defaultSelected: '/',
+  },
+  parameters: {
+    viewport: {
+      defaultViewport: 'iphonex',
+    },
+  },
+};
+
+export const Tablet: Story = {
+  args: {
+    defaultSelected: '/',
+  },
+  parameters: {
+    viewport: {
+      defaultViewport: 'ipad',
+    },
   },
 };
