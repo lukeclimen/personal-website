@@ -55,3 +55,10 @@ export const Tablet: Story = {
     },
   },
 };
+
+export const Desktop: Story = {
+  args: {
+    defaultSelected: '/',
+  },
+  parameters: {},
+};

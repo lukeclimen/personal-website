@@ -16,7 +16,7 @@ export default function SoftNavbar({ defaultSelected }: props) {
   const handleClick = () => setSelected('/');
 
   return (
-    <nav className='flex flex-col bg-gray-700 w-5/6 mx-8 my-2 rounded-xl items-center .custom-shadow md:mx-auto'>
+    <nav className='flex flex-col bg-gray-700 w-5/6 mx-8 my-2 rounded-xl items-center .custom-shadow md:mx-auto lg:flex-row lg:justify-between lg:px-10'>
       <Link href='/'>
         <Image
           src={logoNormal}
