@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import { navLinks } from '../app/layout';
+import { navLinks } from '../../app/layout';
 
-import logoNormal from '../public/assets/logo-light.png';
+import logoNormal from '../../public/assets/logo-light.png';
 
 export default function MobileNavbar() {
   const [menuVisible, setMenuVisible] = useState(false);

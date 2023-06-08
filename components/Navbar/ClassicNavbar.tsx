@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { navLinks } from '../app/layout';
+import { navLinks } from '../../app/layout';
 
-import logoNormal from '../public/assets/logo-light.png';
+import logoNormal from '../../public/assets/logo-light.png';
 
-export default function Navbar() {
+export default function ClassicNavbar() {
   return (
     <nav className='hidden md:flex justify-between h-fit items-center w-full sticky top-0 bg-black text-cyan-200'>
       <Link href='/'>
