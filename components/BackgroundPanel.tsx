@@ -1,3 +1,7 @@
 export default function BackgroundPanel() {
-  return <h1 className='text-cyan-200'>Background Panel</h1>;
+  return (
+    <div className='flex flex-col h-screen w-screen justify-center px-6 py-6 absolute'>
+      <div className='bg-gray-700 rounded-xl w-full h-full mx-auto' />
+    </div>
+  );
 }
