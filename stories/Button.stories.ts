@@ -31,6 +31,6 @@ export const Default: Story = {
 export const Ghost: Story = {
   args: {
     buttonText: 'Lorem, ipsum dolor.',
-    ghost: true
+    ghost: true,
   },
 };
