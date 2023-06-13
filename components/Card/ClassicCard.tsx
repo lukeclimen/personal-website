@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import Headshot from '../public/assets/Headshot.jpg';
+import Headshot from '../../public/assets/Headshot.jpg';
 import { useState } from 'react';
 
 interface cardContent {
@@ -25,7 +25,6 @@ export default function Card({ cardTitle, cardText }: cardContent) {
         }
       />
       <div
-        className={('', '')}
         className={
           flip
             ? 'relative bg-black text-cyan-200 w-60 h-60 md:w-96 md:h-96 p-3 z-20 -translate-x-5 -translate-y-5 transition-all shadow-black shadow-2xl'

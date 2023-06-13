@@ -1,10 +1,10 @@
-import Card from '../components/Card';
+import Card from '../components/Card/ClassicCard';
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 const meta: Meta<typeof Card> = {
-  title: 'Components/Card',
+  title: 'Components/Cards/ClassicCard',
   component: Card,
   parameters: {
     layout: 'centered',
